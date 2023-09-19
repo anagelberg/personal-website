@@ -1,0 +1,11 @@
+@use "./styles/typefaces" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: darkolivegreen;
+  font-family: "Helvetica Neue";
+}
