@@ -1,11 +1,28 @@
 @use "./styles/typefaces" as *;
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   color: #5f8853;
   font-family: "Helvetica Neue";
+}
+
+a,
+:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c0d1bf;
+}
+
+h1 {
+  margin-bottom: 0.5rem; //change
 }
