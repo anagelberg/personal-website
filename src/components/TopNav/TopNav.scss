@@ -5,7 +5,7 @@
   width: 100%;
   @include side-padding;
   @include vertical-padding;
-  @include flexbox($justify: space-between);
+  @include flexbox($justify: space-between, $align-items: flex-start);
   position: fixed;
   top: 0;
 

@@ -8,9 +8,7 @@
 
   &__overlay {
     @include flexbox($direction: column, $align-items: flex-start);
-    top: 5rem;
-    // padding: $spacing-m;
-    height: 90%;
+    height: 100%;
     width: 100%;
     background-image: url("../src/assets/imgs/houseplant.jpg");
     background-size: 50%;
