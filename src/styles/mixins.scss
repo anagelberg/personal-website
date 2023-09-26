@@ -23,7 +23,7 @@
   fill: $primary-dark;
 
   &:hover {
-    fill: $primary-light;
+    fill: darken($primary-dark, 18%);
   }
 }
 
