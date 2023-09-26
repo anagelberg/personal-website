@@ -1,0 +1,20 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/variables.scss" as *;
+
+.nav {
+  width: 100%;
+  @include side-padding;
+  @include vertical-padding;
+  @include flexbox($justify: space-between);
+  position: fixed;
+  top: 0;
+
+  &__contact {
+    display: flex;
+    gap: $spacing-m;
+  }
+
+  &__name {
+    font-weight: 600;
+  }
+}

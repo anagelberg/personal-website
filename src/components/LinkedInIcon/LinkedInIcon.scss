@@ -1,0 +1,5 @@
+@use "../../styles/mixins.scss" as *;
+
+.linkedin-icon {
+  @include icon;
+}

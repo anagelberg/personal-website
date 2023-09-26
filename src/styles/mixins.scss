@@ -14,3 +14,44 @@
     @content;
   }
 }
+
+/* icon */
+
+@mixin icon {
+  height: 2rem;
+  width: 2rem;
+  fill: $primary-dark;
+
+  &:hover {
+    fill: $primary-light;
+  }
+}
+
+/* flex */
+
+@mixin flexbox($direction: row, $justify: center, $align-items: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align-items;
+}
+
+@mixin side-padding {
+  padding-left: $spacing-s;
+  padding-right: $spacing-s;
+
+  @include tablet {
+    padding-left: $spacing-m;
+    padding-right: $spacing-m;
+  }
+}
+
+@mixin vertical-padding {
+  padding-top: $spacing-s;
+  padding-bottom: $spacing-s;
+
+  @include tablet {
+    padding-top: $spacing-m;
+    padding-bottom: $spacing-m;
+  }
+}
