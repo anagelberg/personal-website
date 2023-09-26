@@ -6,7 +6,7 @@ function LinkedInIcon() {
         <a href="https://www.linkedin.com/in/amy-nagelberg/"
             target="_blank"
             rel="noopener noreferrer">
-            <LinkedIn class='linkedin-icon' />
+            <LinkedIn className='linkedin-icon' />
         </a>
     );
 }

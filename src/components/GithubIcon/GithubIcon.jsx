@@ -7,7 +7,7 @@ function GithubIcon() {
             href="https://github.com/anagelberg"
             target="_blank"
             rel="noopener noreferrer">
-            <Github class='github-icon' />
+            <Github className='github-icon' />
         </a>
     );
 }
