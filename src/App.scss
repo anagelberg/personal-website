@@ -12,7 +12,7 @@
     width: 100%;
     background-image: url("../src/assets/imgs/houseplant.jpg");
     background-size: 30%;
-    background-position: left bottom;
+    background-position: $spacing-s bottom;
     background-repeat: no-repeat;
     overflow: auto;
     position: fixed;
@@ -20,6 +20,11 @@
     @include tablet {
       background-size: 20%;
       align-items: center;
+      background-position: $spacing-xl bottom;
+    }
+
+    @include desktop {
+      background-position: $spacing-xxl bottom;
     }
   }
 

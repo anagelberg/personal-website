@@ -41,8 +41,12 @@
   padding-right: $spacing-s;
 
   @include tablet {
-    padding-left: $spacing-m;
-    padding-right: $spacing-m;
+    padding-left: $spacing-xl;
+    padding-right: $spacing-xl;
+  }
+  @include desktop {
+    padding-left: $spacing-xxl;
+    padding-right: $spacing-xxl;
   }
 }
 
