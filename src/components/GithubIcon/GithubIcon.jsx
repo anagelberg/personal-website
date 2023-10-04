@@ -1,13 +1,13 @@
 import './GithubIcon.scss';
 import { ReactComponent as Github } from '../../assets/icons/github.svg';
 
-function GithubIcon() {
+function GithubIcon({ link, modifier }) {
     return (
         <a
-            href="https://github.com/anagelberg"
+            href={link}
             target="_blank"
             rel="noopener noreferrer">
-            <Github className='github-icon' />
+            <Github className={`github-icon ${modifier && `github-icon${modifier}`}`} />
         </a>
     );
 }

@@ -1,0 +1,22 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/variables.scss" as *;
+
+.trophy {
+  @include flexbox($justify: flex-start, $align-items: flex-start);
+  gap: 0.5rem;
+
+  // make mixin for this
+  font-size: 0.825rem;
+
+  &__icon {
+    @include sm-icon;
+
+    &:hover {
+      fill: $primary-dark; //override
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+  }
+}

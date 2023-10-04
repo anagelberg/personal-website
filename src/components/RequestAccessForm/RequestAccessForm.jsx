@@ -1,0 +1,3 @@
+{/* The projects BandSite, BrainFlix, and InStock were built as part of BrainStation's Web Development Diploma Program, on which I received an excellent evaluation for a combination of code quality, visual design, functionality, and execution.
+
+It would be my pleasure to share my code with those interested in evaluating me as a candidate for hire so that you may marvel at its awesomeness (or laugh at me -- whichever). However, all BrainStation graduates are required to uphold academic integrity initiatives by keeping our GitHub repos private for these projects. Please fill out the following form if you would like to request access, and I will provide access to qualified individuals. Thank you for your understanding and cooperation.*/}

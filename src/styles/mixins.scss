@@ -27,6 +27,12 @@
   }
 }
 
+@mixin sm-icon {
+  @include icon;
+  height: 1rem;
+  width: 1rem;
+}
+
 /* flex */
 
 @mixin flexbox($direction: row, $justify: center, $align-items: center) {

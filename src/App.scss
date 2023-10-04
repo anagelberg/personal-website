@@ -12,14 +12,14 @@
     width: 100%;
     background-image: url("../src/assets/imgs/houseplant.jpg");
     background-size: 30%;
-    background-position: $spacing-s bottom;
+    background-position: calc(100% - $spacing-s) bottom;
     background-repeat: no-repeat;
     overflow: auto;
     position: fixed;
 
     @include tablet {
       background-size: 20%;
-      align-items: center;
+      align-items: flex-end;
       background-position: $spacing-xl bottom;
     }
 
@@ -29,15 +29,21 @@
   }
 
   &__content {
+    width: 100%;
     padding-top: 100px;
-    max-width: 700px;
     @include side-padding;
 
     max-height: 60vh;
     overflow: auto;
 
     @include tablet {
+      width: 70%;
       padding-right: 200px;
     }
+  }
+
+  &__text {
+    // border: 1px solid red;
+    max-width: 400px;
   }
 }

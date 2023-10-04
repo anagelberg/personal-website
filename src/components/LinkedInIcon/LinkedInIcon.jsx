@@ -1,9 +1,9 @@
 import './LinkedInIcon.scss';
 import { ReactComponent as LinkedIn } from '../../assets/icons/linkedin.svg';
 
-function LinkedInIcon() {
+function LinkedInIcon({ link }) {
     return (
-        <a href="https://www.linkedin.com/in/amy-nagelberg/"
+        <a href={link}
             target="_blank"
             rel="noopener noreferrer">
             <LinkedIn className='linkedin-icon' />
