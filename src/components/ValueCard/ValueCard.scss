@@ -1,0 +1,8 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/variables.scss" as *;
+
+.value-card {
+  display: flex;
+  gap: $spacing-m;
+  margin-bottom: $spacing-xl;
+}

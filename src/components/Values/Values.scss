@@ -1,0 +1,13 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/variables.scss" as *;
+
+.values {
+  &__subtitle {
+    margin-bottom: $spacing-xl;
+  }
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    fill: $primary-dark;
+  }
+}
