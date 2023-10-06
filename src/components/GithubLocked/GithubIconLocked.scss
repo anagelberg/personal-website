@@ -1,0 +1,15 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/variables.scss" as *;
+
+.github-locked {
+  position: relative;
+
+  &__locked-icon {
+    width: .75rem;
+    height: .75rem;
+    position: absolute;
+    bottom: 2px;
+    right: -2px;
+    fill: $primary-dark;
+  }
+}

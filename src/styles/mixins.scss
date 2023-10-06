@@ -25,12 +25,15 @@
   &:hover {
     fill: darken($primary-dark, 18%);
   }
+
 }
 
 @mixin sm-icon {
   @include icon;
-  height: 1rem;
-  width: 1rem;
+  height: 1.25rem;
+  width: 1.25rem;
+
+
 }
 
 /* flex */
@@ -50,6 +53,7 @@
     padding-left: $spacing-xl;
     padding-right: $spacing-xl;
   }
+
   @include desktop {
     padding-left: $spacing-xxl;
     padding-right: $spacing-xxl;
