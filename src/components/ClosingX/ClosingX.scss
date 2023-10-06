@@ -1,0 +1,11 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.close-x {
+    position: absolute;
+    right: $icon-spacing-unit;
+    top: $icon-spacing-unit;
+    @include sm-icon;
+
+
+}

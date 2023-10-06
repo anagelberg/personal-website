@@ -13,3 +13,14 @@
     fill: $primary-dark;
   }
 }
+
+
+
+.access-modal {
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

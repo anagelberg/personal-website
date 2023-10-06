@@ -1,0 +1,53 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/variables.scss" as *;
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($background-light, .8);
+    z-index: 10;
+    @include flexbox;
+
+    &__content {
+        display: flex;
+        padding: $spacing-xl;
+        flex-direction: column;
+        justify-content: space-between;
+        background: white;
+        height: 90vh;
+        width: 90vw;
+        position: relative;
+        overflow: auto;
+        // border: 1px solid $primary-light;
+
+        @include tablet {
+            max-width: 35rem;
+            max-height: 28rem;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__top {
+        height: 100%;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__footer {
+        @include flexbox($justify: flex-end);
+    }
+
+    &__header {
+        // @include flex-center($justify-content: flex-end);
+    }
+}

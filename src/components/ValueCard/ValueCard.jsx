@@ -8,7 +8,7 @@ function ValueCard({ name, description, icon }) {
                 {icon()}
             </div>
             <div className="value-card__text">
-                <h3>{name}</h3>
+                <h3 className='value-card__name'>{name}</h3>
                 <p>{description}</p>
             </div>
         </article>
