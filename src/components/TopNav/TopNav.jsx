@@ -9,7 +9,6 @@ function TopNav() {
                 <GithubIcon link="https://github.com/anagelberg" />
                 <LinkedInIcon link="https://www.linkedin.com/in/amy-nagelberg/" />
             </div>
-            <h1 className='nav__name'>Amy Nagelberg</h1>
         </nav>
     )
 };
