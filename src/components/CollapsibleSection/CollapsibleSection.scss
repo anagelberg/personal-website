@@ -1,0 +1,20 @@
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/variables.scss' as *;
+
+
+@use '../../styles/variables.scss' as *;
+
+.section {
+    &__title {
+        font-size: 1rem;
+
+        &:hover {
+            // cursor: pointer;
+            // color: darken($primary-dark, 20%);
+        }
+    }
+
+    &__contents {
+        margin-bottom: 2rem;
+    }
+}

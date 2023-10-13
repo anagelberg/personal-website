@@ -1,5 +1,6 @@
 import './Projects.scss';
 import ProjectCard from '../ProjectCard/ProjectCard';
+import CollapsibleSection from '../CollapsibleSection/CollapsibleSection';
 
 const projects = [
     {
@@ -48,13 +49,15 @@ const projects = [
 function Projects() {
     return (
         <section>
-            <h1>My Projects</h1>
-            {
-                projects.map(project => {
+
+            <CollapsibleSection title="My Projects" contents={() => {
+                return projects.map(project => {
                     return <ProjectCard project={project} />
                 })
             }
-        </section>
+
+            } />
+        </section >
 
     )
 }
