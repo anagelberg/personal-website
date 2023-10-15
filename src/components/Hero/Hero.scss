@@ -1,3 +1,5 @@
+@use "../../styles/variables.scss" as *;
+
 .hero {
-  margin-bottom: 2rem;
+  margin-bottom: $spacing-xxl;
 }

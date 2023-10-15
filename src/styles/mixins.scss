@@ -25,15 +25,12 @@
   &:hover {
     fill: darken($primary-dark, 18%);
   }
-
 }
 
 @mixin sm-icon {
   @include icon;
   height: 1.25rem;
   width: 1.25rem;
-
-
 }
 
 /* flex */
@@ -68,4 +65,10 @@
     padding-top: $spacing-m;
     padding-bottom: $spacing-m;
   }
+}
+
+@mixin uppercase-header {
+  font-size: 1rem; //change to match typography once have
+  font-weight: bold;
+  text-transform: uppercase;
 }

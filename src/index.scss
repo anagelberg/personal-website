@@ -21,13 +21,18 @@ a,
   text-decoration: none;
 }
 
-
 /* Typography */
 /* Do better */
 h1 {
   margin-bottom: $spacing-m;
   font-family: "Fira Code", monospace;
   font-weight: 400;
+}
+
+h2 {
+  font-family: "Fira Code", monospace;
+  font-weight: 400;
+  margin-bottom: $spacing-m;
 }
 
 p {

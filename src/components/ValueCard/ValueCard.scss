@@ -7,7 +7,6 @@
   margin-bottom: $spacing-xl;
 
   &__name {
-    font-size: 1rem;
-    text-transform: uppercase;
+    @include uppercase-header;
   }
 }

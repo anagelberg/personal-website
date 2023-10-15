@@ -1,0 +1,23 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/variables.scss" as *;
+
+.img-container {
+  display: none;
+  background-image: url("../../assets/imgs/houseplant.jpg");
+  background-size: cover;
+  position: fixed;
+
+  @include tablet {
+    display: inline;
+    height: 7rem;
+    width: 7rem;
+    left: $spacing-xl;
+    bottom: 0;
+  }
+
+  @include desktop {
+    left: $spacing-xxl;
+    height: 13rem;
+    width: 13rem;
+  }
+}

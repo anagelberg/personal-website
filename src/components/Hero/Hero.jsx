@@ -3,9 +3,10 @@ import './Hero.scss';
 function Hero() {
     return (
         <header className="hero">
-            <h1>This is the start of something wonderful.</h1>
-            <p>You've reached Amy's portfolio website.</p>
-            <p>Please stay tuned as I finish it.</p>
+            <p>Hello, my name is Amy.</p>
+            <p>I'm a full-stack developer located in Vancouver, BC.</p>
+            <p>Enjoy my website!</p>
+
         </header>
     )
 }

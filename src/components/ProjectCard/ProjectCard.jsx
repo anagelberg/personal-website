@@ -6,8 +6,6 @@ import GithubIconLocked from '../GithubLocked/GithubIconLocked';
 
 
 
-/// TODO: add github locked symbol
-// TODO: add github request form
 function ProjectCard({ project }) {
     return (
         <article className="project">
@@ -20,7 +18,6 @@ function ProjectCard({ project }) {
                         rel="noopener noreferrer">
                         {project.title}
                     </a>
-
 
                 </div>
 

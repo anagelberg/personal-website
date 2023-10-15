@@ -1,30 +1,23 @@
 import './App.scss';
 import TopNav from './components/TopNav/TopNav';
 import Hero from './components/Hero/Hero';
-import Projects from './components/Projects/Projects';
-import Values from './components/Values/Values';
-// import Story from './components/Story/Story';
+import Sections from './components/Sections/Sections';
+import DecorativeImage from './components/DecorativeImage/DecorativeImage';
 
 
 function App() {
   return (
-    <div className="app">
-      <div className="app__overlay">
-        <TopNav />
-        <div className="app__content">
+    <main className="app">
+      <TopNav />
 
-          <div className="app__text">
-            <Hero />
-            <Projects />
+      <section className="app__text">
+        <Hero />
+        <Sections />
+      </section>
 
-            <Values />
-            {/* <Story /> */}
-          </div>
+      <DecorativeImage />
 
-
-        </div>
-      </div>
-    </div>
+    </main>
   );
 }
 

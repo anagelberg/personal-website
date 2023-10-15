@@ -46,17 +46,18 @@ const projects = [
     }
 ]
 
-function Projects() {
+function Projects({ isOpen, setIsOpen }) {
     return (
         <section>
 
-            <CollapsibleSection title="My Projects" contents={() => {
-                return projects.map(project => {
-                    return <ProjectCard project={project} />
-                })
-            }
-
-            } />
+            <CollapsibleSection title="My Projects"
+                contents={() => {
+                    return projects.map(project => {
+                        return <ProjectCard project={project} />
+                    })
+                }
+                }
+                isOpen={isOpen} setIsOpen={setIsOpen} />
         </section >
 
     )

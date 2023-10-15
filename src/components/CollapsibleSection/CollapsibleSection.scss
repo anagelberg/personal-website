@@ -2,35 +2,44 @@
 @use "../../styles/variables.scss" as *;
 @use "../../styles/variables.scss" as *;
 
-@keyframes slideDown {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 @keyframes grow {
   0% {
     min-height: 0;
     max-height: 0;
+    opacity: 0;
   }
   99% {
     min-height: 700px;
     max-height: 700px;
   }
   100% {
+    opacity: 1;
     max-height: auto;
   }
 }
 
-.section {
-  &__title {
-    font-size: 1.5rem;
+@keyframes shrink {
+  0% {
+    max-height: auto;
+    opacity: 1;
+  }
+  1% {
+    max-height: 700px;
+    min-height: 700px;
+  }
+  100% {
+    min-height: 0;
+    max-height: 0;
+    opacity: 0;
+  }
+}
 
+.section {
+  @include desktop {
+    margin-bottom: $spacing-xl;
+  }
+
+  &__title {
     &:hover {
       cursor: pointer;
       color: darken($primary-dark, 20%);
@@ -42,20 +51,20 @@
   }
 
   &__contents {
-    animation: slideDown 1s linear;
-    margin-bottom: 2rem;
-
-    &--hidden {
-      display: none;
-    }
+    margin-bottom: $spacing-xxl;
   }
 
   &__content-container {
     overflow: hidden;
-    min-height: 20px;
+    min-height: 0px;
 
     &--open {
-      animation: grow 1s linear;
+      animation: grow 0.7s ease-in-out;
+    }
+
+    &--closed {
+      animation: shrink 0.7s ease-in-out;
+      height: 0px;
     }
   }
   &__arrow {

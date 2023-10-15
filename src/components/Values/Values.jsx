@@ -7,11 +7,13 @@ import { ReactComponent as Health } from '../../assets/icons/Health.svg';
 import CollapsibleSection from '../CollapsibleSection/CollapsibleSection';
 
 
-function Values() {
+function Values({ isOpen, setIsOpen }) {
     return (
 
         <CollapsibleSection
             title="My Values"
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
             contents={() => {
                 return (
                     <>
@@ -19,7 +21,7 @@ function Values() {
 
 
                         <ValueCard
-                            name="Truth"
+                            name="Truth & Integrity"
                             description="Open and honest communication for informed decision-making and negotiation."
                             icon={() => <Truth className='values__icon' />} />
 
