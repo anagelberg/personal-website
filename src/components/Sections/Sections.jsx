@@ -20,7 +20,7 @@ function Sections() {
     }, [isProjectsOpen]);
 
     useEffect(() => {
-        (isProjectsOpen || isValuesOpen) && setShowImageMobile(false);
+        (isProjectsOpen || isValuesOpen) ? setShowImageMobile(false) : setShowImageMobile(true);
     }, [isProjectsOpen, isValuesOpen])
 
     return (
