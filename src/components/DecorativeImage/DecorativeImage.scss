@@ -6,11 +6,19 @@
   background-image: url("../../assets/imgs/houseplant.jpg");
   background-size: cover;
   position: fixed;
+  height: 7rem;
+  width: 7rem;
+  right: $spacing-s;
+  bottom: 0;
+
+  &--show {
+    display: inline;
+  }
 
   @include tablet {
     display: inline;
-    height: 7rem;
-    width: 7rem;
+    // height: 7rem;
+    // width: 7rem;
     left: $spacing-xl;
     bottom: 0;
   }

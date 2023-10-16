@@ -1,9 +1,9 @@
 
 import './DecorativeImage.scss';
 
-function DecorativeImage() {
+function DecorativeImage({ show }) {
     return (
-        <div className='img-container'>
+        <div className={`img-container ${show && 'img-container--show'}`}>
         </div>
     )
 }
