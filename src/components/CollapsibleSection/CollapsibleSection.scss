@@ -70,5 +70,10 @@
   &__arrow {
     @include sm-icon;
     margin-left: 1rem;
+    transition: 0.3s;
+
+    &--rotated {
+      transform: rotate(-90deg);
+    }
   }
 }

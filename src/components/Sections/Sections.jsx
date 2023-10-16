@@ -1,6 +1,8 @@
 import './Sections.scss';
 import Projects from '../Projects/Projects';
 import Values from '../Values/Values';
+import ResumeDownload from '../ResumeDownload/ResumeDownload';
+
 import { useState, useEffect } from 'react';
 
 function Sections() {
@@ -20,6 +22,7 @@ function Sections() {
         <>
             <Projects isOpen={isProjectsOpen} setIsOpen={setIsProjectsOpen} />
             <Values isOpen={isValuesOpen} setIsOpen={setIsValuesOpen} />
+            <ResumeDownload />
         </>
     )
 

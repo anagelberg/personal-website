@@ -12,7 +12,7 @@ function CollapsibleSection({ title, contents, isOpen, setIsOpen }) {
                 }
                 className='section__title'>
                 {title}
-                <Arrow className='section__arrow' />
+                <Arrow className={`section__arrow ${isOpen && 'section__arrow--rotated'}`} />
             </h2>
             <div
                 className={isOpen

@@ -1,0 +1,22 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/variables.scss" as *;
+
+.resume-download {
+  &__text {
+    @include flexbox($justify: flex-start);
+    gap: $icon-spacing-unit;
+
+    &:hover {
+      color: darken($primary-dark, 20%);
+
+      .resume-download__icon {
+        fill: darken($primary-dark, 20%);
+      }
+    }
+  }
+
+  &__icon {
+    transform: rotate(180deg);
+    fill: $primary-dark;
+  }
+}
