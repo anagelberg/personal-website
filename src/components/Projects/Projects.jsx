@@ -11,6 +11,14 @@ const projects = [
         techStack: ["react.js", "scss", "node.js", "express.js", "mysql"],
         deployment: "https://moviejar.ca",
     },
+        {
+        title: "Crisis Connect",
+        shortDescription: "Platform to support natural disaster survivors planned, designed and built over 1 week for the WWCode Hackathon for Social Good, 2023",
+        collaborators: "Grace Lee (UX, Team Lead), Supreet Kaur (Web Developer), Rachel Liao (Data Scientist),
+        github: "https://github.com/anagelberg/crisis-response",
+        techStack: ["react.js", "scss"],
+        deployment: "https://crisis-connect.amy-nagelberg.dev",
+    },
     {
         title: "LUSH Digi-Basket",
         shortDescription: "In this 24-hour cross-discipline collaboration hackathon project, we were tasked with designing and building a new in-store point-of-sale system concept that meets LUSH's ethical standards.",
