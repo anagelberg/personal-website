@@ -14,7 +14,7 @@ const projects = [
         {
         title: "Crisis Connect",
         shortDescription: "Platform to support natural disaster survivors planned, designed and built over 1 week for the WWCode Hackathon for Social Good, 2023",
-        collaborators: "Grace Lee (UX, Team Lead), Supreet Kaur (Web Developer), Rachel Liao (Data Scientist),
+        collaborators: "Grace Lee (UX, Team Lead), Supreet Kaur (Web Developer), Rachel Liao (Data Scientist)",
         github: "https://github.com/anagelberg/crisis-response",
         techStack: ["react.js", "scss"],
         deployment: "https://crisis-connect.amy-nagelberg.dev",
